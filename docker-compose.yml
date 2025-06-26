@@ -95,7 +95,7 @@ services:
         - GF_SMTP_ENABLED=true
         - GF_SMTP_HOST=smtp.gmail.com:587
         - GF_SMTP_USER=islem.nasraoui21@gmail.com
-        - GF_SMTP_PASSWORD=ddsbwudgohaiangt
+        - GF_SMTP_PASSWORD=ddsb wudg ohai angt
         - GF_SMTP_FROM_ADDRESS=islem.nasraoui21@gmail.com
 
 
