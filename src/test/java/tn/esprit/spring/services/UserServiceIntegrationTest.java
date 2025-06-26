@@ -1,6 +1,9 @@
+package tn.esprit.spring.services;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import tn.esprit.spring.entities.Role;
 import tn.esprit.spring.entities.User;
 import tn.esprit.spring.repository.UserRepository;
@@ -11,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+@ActiveProfiles("test")
 @SpringBootTest(classes = tn.esprit.spring.TimesheetDevopsApplication.class)
 public class UserServiceIntegrationTest {
 
@@ -20,7 +23,6 @@ public class UserServiceIntegrationTest {
 
     @Autowired
     private UserRepository userRepository;
-
     @Test
     public void testAddUserReal() {
         User user = new User("Ali", "Ben Ali", new Date(), Role.ADMINISTRATEUR);

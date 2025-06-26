@@ -4,6 +4,7 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import tn.esprit.spring.entities.Role;
 import tn.esprit.spring.entities.User;
 
@@ -11,7 +12,7 @@ import java.util.Date;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+@ActiveProfiles("test")
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 public class UserServiceImplTest {

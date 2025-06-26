@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.mockito.Mockito;
+import org.springframework.test.context.ActiveProfiles;
 import tn.esprit.spring.entities.Role;
 import tn.esprit.spring.entities.User;
 import tn.esprit.spring.repository.UserRepository;
@@ -16,7 +17,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
-
+@ActiveProfiles("test")
 @ExtendWith(MockitoExtension.class)
 public class UserServiceImplMock {
 
