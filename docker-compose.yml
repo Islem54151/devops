@@ -68,6 +68,14 @@ services:
       - 9115:9115
     networks:
       - monitoring-net
+  alertmanager:
+    image: prom/alertmanager
+    volumes:
+      - ./alertmanager.yml:/etc/alertmanager/alertmanager.yml
+    ports:
+      - 9093:9093
+    networks:
+      - monitoring-net
 
 volumes:
   db:
