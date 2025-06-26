@@ -1,2 +1,4 @@
 tn\esprit\spring\services\UserServiceImplMock.class
+tn\esprit\spring\services\UserServiceImplTest$UserRepositoryTest.class
 tn\esprit\spring\services\UserServiceImplTest.class
+tn\esprit\spring\services\UserRepositoryTest.class
