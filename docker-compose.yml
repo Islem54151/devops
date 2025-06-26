@@ -80,6 +80,20 @@ services:
       - 9093:9093
     networks:
       - monitoring-net
+  grafana:
+    image: grafana/grafana
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+    networks:
+      - monitoring-net
+    depends_on:
+      - prometheus
+    volumes:
+      - grafana-data:/var/lib/grafana
+
+
 
 volumes:
+  grafana-data:
   db:
