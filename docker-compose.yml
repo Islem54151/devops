@@ -41,6 +41,9 @@ services:
   prometheus:
     image: prom/prometheus
     restart: unless-stopped
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--alertmanager.url=http://alertmanager:9093'
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
       - ./rules.yml:/etc/prometheus/rules.yml:ro
@@ -49,8 +52,10 @@ services:
     depends_on:
       - node_exporter
       - blackbox_exporter
+      - alertmanager
     networks:
       - monitoring-net
+
 
   node_exporter:
     image: prom/node-exporter
