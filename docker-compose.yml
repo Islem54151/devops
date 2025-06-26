@@ -43,7 +43,6 @@ services:
     restart: unless-stopped
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
-      - '--alertmanager.url=http://alertmanager:9093'
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
       - ./rules.yml:/etc/prometheus/rules.yml:ro
