@@ -91,6 +91,12 @@ services:
       - prometheus
     volumes:
       - grafana-data:/var/lib/grafana
+    environment:
+        - GF_SMTP_ENABLED=true
+        - GF_SMTP_HOST=smtp.gmail.com:587
+        - GF_SMTP_USER=islem.nasraoui21@gmail.com
+        - GF_SMTP_PASSWORD=admin  # Pas le mot de passe Gmail direct
+        - GF_SMTP_FROM_ADDRESS=islem.nasraoui21@gmail.com
 
 
 
