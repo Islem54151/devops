@@ -50,7 +50,6 @@ services:
     depends_on:
       - node_exporter
       - blackbox_exporter
-      - alertmanager
     networks:
       - monitoring-net
 
