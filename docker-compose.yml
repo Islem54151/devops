@@ -67,7 +67,7 @@ services:
     image: prom/blackbox-exporter
     restart: unless-stopped
     ports:
-      - 9115:9115
+      - 9116:9115
     networks:
       - monitoring-net
 
