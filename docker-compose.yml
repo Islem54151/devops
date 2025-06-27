@@ -44,8 +44,7 @@ services:
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
     volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
-      - ./rules.yml:/etc/prometheus/rules.yml:ro
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
     ports:
       - 9091:9090
     depends_on:
@@ -72,14 +71,7 @@ services:
       - 9115:9115
     networks:
       - monitoring-net
-  alertmanager:
-    image: prom/alertmanager
-    volumes:
-      - ./alertmanager:/etc/alertmanager
-    ports:
-      - 9094:9093
-    networks:
-      - monitoring-net
+
   grafana:
     image: grafana/grafana
     restart: unless-stopped
