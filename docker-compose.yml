@@ -24,7 +24,7 @@ services:
     image: islem2222/timesheet-devops:1.0.0
     restart: on-failure
     ports:
-      - 8091:8089
+      - 8092:8089
     environment:
       SPRING_APPLICATION_JSON: '{
         "spring.datasource.url"  : "jdbc:mysql://mysqldb:3306/achat_db?createDatabaseIfNotExist=true",
@@ -47,7 +47,7 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
       - ./rules.yml:/etc/prometheus/rules.yml:ro
     ports:
-      - 9091:9090
+      - 9092:9090
     depends_on:
       - node_exporter
       - blackbox_exporter
