@@ -44,10 +44,10 @@ services:
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
     volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
       - ./rules.yml:/etc/prometheus/rules.yml:ro
     ports:
-      - 9092:9090
+      - 9091:9090
     depends_on:
       - node_exporter
       - blackbox_exporter
