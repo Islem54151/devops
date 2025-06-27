@@ -77,7 +77,7 @@ services:
     volumes:
       - ./alertmanager:/etc/alertmanager
     ports:
-      - 9093:9093
+      - 9094:9093
     networks:
       - monitoring-net
   grafana:
