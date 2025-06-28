@@ -1,7 +1,9 @@
+tn\esprit\spring\services\DepartementServiceImplTest.class
 tn\esprit\spring\services\EmployeServiceImplTest.class
 tn\esprit\spring\services\UserServiceImplMock.class
 tn\esprit\spring\services\EntrepriseServiceImplTest.class
 tn\esprit\spring\services\UserRepositoryTest.class
 tn\esprit\spring\services\EmployeServiceImplMock.class
+tn\esprit\spring\services\DepartementServiceImplMock.class
 tn\esprit\spring\services\EntrepriseServiceImplMock.class
 tn\esprit\spring\services\UserServiceImplTest.class

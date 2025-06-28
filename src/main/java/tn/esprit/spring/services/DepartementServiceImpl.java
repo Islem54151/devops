@@ -11,7 +11,7 @@ import java.util.List;
 public class DepartementServiceImpl implements IDepartementService {
 
     @Autowired
-    private DepartementRepository departementRepository;
+    DepartementRepository departementRepository;
 
     @Override
     public List<Departement> retrieveAllDepartements() {
