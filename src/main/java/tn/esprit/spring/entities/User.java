@@ -24,7 +24,7 @@ public class User implements Serializable {
 	@Enumerated(EnumType.STRING)
 	private Role role;
 
-	public User() {}
+	public User(String islem, String nasraoui, Role administrateur) {}
 
 	public User(String firstName, String lastName, Date dateNaissance, Role role) {
 		this.firstName = firstName;
