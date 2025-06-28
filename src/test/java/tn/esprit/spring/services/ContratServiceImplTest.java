@@ -55,4 +55,26 @@ public class ContratServiceImplTest {
         contratService.deleteContrat(String.valueOf(contrat.getReference()));
         assertThat(contratService.retrieveContrat(String.valueOf(contrat.getReference()))).isNull();
     }
+    @Test
+    public void testSettersAndGetters() {
+        Contrat c = new Contrat();
+        Date now = new Date();
+
+        c.setReference(1L);
+        c.setDateDebut(now);
+        c.setTypeContrat("CDI");
+        c.setSalaire(3000f);
+
+        assertThat(c.getReference()).isEqualTo(1L);
+        assertThat(c.getDateDebut()).isEqualTo(now);
+        assertThat(c.getTypeContrat()).isEqualTo("CDI");
+        assertThat(c.getSalaire()).isEqualTo(3000f);
+    }
+
+    @Test
+    public void testConstructor() {
+        Contrat c = new Contrat(new Date(), "CDD", 2500f);
+        assertThat(c.getTypeContrat()).isEqualTo("CDD");
+        assertThat(c.getSalaire()).isEqualTo(2500f);
+    }
 }
