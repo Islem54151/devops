@@ -3,10 +3,11 @@ timesheet-devops,tn.esprit.spring.control,UserRestControl,26,3,0,0,6,1,5,1,5,1
 timesheet-devops,tn.esprit.spring,TimesheetDevopsApplication.userServiceImpl,39,6,0,0,9,3,5,1,5,1
 timesheet-devops,tn.esprit.spring,TimesheetDevopsApplication,5,3,0,0,2,1,1,1,1,1
 timesheet-devops,tn.esprit.spring.services,UserServiceImpl,23,16,0,0,4,5,3,3,3,3
+timesheet-devops,tn.esprit.spring.services,EntrepriseServiceImpl,33,3,0,0,6,1,5,1,5,1
 timesheet-devops,tn.esprit.spring.services,EmployeServiceImpl,39,0,0,0,9,0,6,0,6,0
 timesheet-devops,tn.esprit.spring.entities,Employe,141,30,0,0,39,15,15,8,15,8
 timesheet-devops,tn.esprit.spring.entities,Role,0,33,0,0,0,2,0,1,0,1
-timesheet-devops,tn.esprit.spring.entities,Entreprise,42,8,0,0,16,3,9,1,9,1
+timesheet-devops,tn.esprit.spring.entities,Entreprise,22,28,0,0,10,9,6,4,6,4
 timesheet-devops,tn.esprit.spring.entities,Departement,34,3,0,0,15,2,9,1,9,1
 timesheet-devops,tn.esprit.spring.entities,Contrat,47,3,0,0,20,2,11,1,11,1
 timesheet-devops,tn.esprit.spring.entities,User,84,21,0,0,16,9,14,3,14,3

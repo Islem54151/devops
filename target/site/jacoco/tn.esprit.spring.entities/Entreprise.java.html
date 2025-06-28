@@ -25,7 +25,7 @@ public class Entreprise implements Serializable{
 	
 	private String raisonSocial;
 	
-<span class="pc" id="L28">	@OneToMany(mappedBy=&quot;entreprise&quot;, </span>
+<span class="fc" id="L28">	@OneToMany(mappedBy=&quot;entreprise&quot;, </span>
 			cascade = {CascadeType.PERSIST, CascadeType.REMOVE}, 
 			fetch=FetchType.EAGER)
 	private List&lt;Departement&gt; departements = new ArrayList&lt;&gt;();
@@ -34,13 +34,13 @@ public class Entreprise implements Serializable{
 <span class="fc" id="L34">		super();</span>
 <span class="fc" id="L35">	}</span>
 
-<span class="nc" id="L37">	public Entreprise(String name, String raisonSocial) {</span>
-<span class="nc" id="L38">		this.name = name;</span>
-<span class="nc" id="L39">		this.raisonSocial = raisonSocial;</span>
-<span class="nc" id="L40">	}</span>
+<span class="fc" id="L37">	public Entreprise(String name, String raisonSocial) {</span>
+<span class="fc" id="L38">		this.name = name;</span>
+<span class="fc" id="L39">		this.raisonSocial = raisonSocial;</span>
+<span class="fc" id="L40">	}</span>
  
 	public String getName() {
-<span class="nc" id="L43">		return name;</span>
+<span class="fc" id="L43">		return name;</span>
 	}
 
 	public void setName(String name) {
@@ -64,7 +64,7 @@ public class Entreprise implements Serializable{
 <span class="nc" id="L64">	}</span>
 
 	public Long getId() {
-<span class="nc" id="L67">		return id;</span>
+<span class="fc" id="L67">		return id;</span>
 	}
 
 	public void setId(Long id) {
