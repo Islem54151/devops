@@ -38,6 +38,10 @@ public class User implements Serializable {
 		this.id = id;
 	}
 
+	public User() {
+
+	}
+
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName +
